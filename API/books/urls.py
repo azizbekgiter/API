@@ -4,8 +4,8 @@ from .views import AuthorModelView, CategoryModelView, BookModelView
 
 router = routers.DefaultRouter()
 router.register(r'authors', AuthorModelView)
-router.register(r'authors', CategoryModelView)
-router.register(r'authors', BookModelView)
+router.register(r'category', CategoryModelView)
+router.register(r'book', BookModelView)
 
 urlpatterns = [
     path('', include(router.urls)),
